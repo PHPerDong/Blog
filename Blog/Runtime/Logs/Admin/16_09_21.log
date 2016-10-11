@@ -1,0 +1,1100 @@
+[ 2016-09-21T13:00:12+08:00 ] 127.0.0.1 /Admin/login/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000430s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000622s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000734s ]
+
+[ 2016-09-21T13:00:18+08:00 ] 127.0.0.1 /index.php/Admin/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000448s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000563s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000670s ]
+SQL: SHOW COLUMNS FROM `dong_auth_group_access` [ RunTime:0.7016s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM dong_auth_group_access a INNER JOIN dong_auth_group g on a.group_id=g.id  WHERE ( a.uid='1' and g.status='1' )  [ RunTime:0.9309s ]
+SQL: SHOW COLUMNS FROM `dong_auth_rule` [ RunTime:0.2018s ]
+SQL: SELECT `condition`,`name` FROM `dong_auth_rule` WHERE `id` IN ('1','2','3','4','5','6','7','8','9','10','11','12','13','14','15','19','20','21','23') AND `type` = 1 AND `status` = 1  [ RunTime:0.0823s ]
+SQL: SHOW COLUMNS FROM `dong_auth_rule` [ RunTime:0.0139s ]
+SQL: SELECT * FROM `dong_auth_rule` WHERE ( menu=0 ) ORDER BY id DESC  [ RunTime:0.0287s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.043615s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.043814s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.172566s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.172765s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000418s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000528s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000791s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000889s ]
+
+[ 2016-09-21T13:00:32+08:00 ] 127.0.0.1 /index.php/Admin/User/userInfo.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000458s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000735s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000848s ]
+SQL: SHOW COLUMNS FROM `dong_auth_group_access` [ RunTime:0.0125s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM dong_auth_group_access a INNER JOIN dong_auth_group g on a.group_id=g.id  WHERE ( a.uid='1' and g.status='1' )  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `dong_auth_rule` [ RunTime:0.0154s ]
+SQL: SELECT `condition`,`name` FROM `dong_auth_rule` WHERE `id` IN ('1','2','3','4','5','6','7','8','9','10','11','12','13','14','15','19','20','21','23') AND `type` = 1 AND `status` = 1  [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `dong_auth_rule` [ RunTime:0.0145s ]
+SQL: SELECT * FROM `dong_auth_rule` WHERE ( menu=0 ) ORDER BY id DESC  [ RunTime:0.0005s ]
+NOTIC: [2048] Declaration of Admin\Model\AdminModel::_before_delete() should be compatible with Think\Model::_before_delete($options) E:\wamp\www\Blog\Blog\Admin\Model\AdminModel.class.php 第 121 行.
+SQL: SELECT * FROM `dong_admin` WHERE ( status=0 )  [ RunTime:0.2072s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000195s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000305s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.036660s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.036784s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000806s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000922s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000758s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000860s ]
+
+[ 2016-09-21T13:00:38+08:00 ] 127.0.0.1 /index.php/Admin/User/update.html?id=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000438s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000582s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000702s ]
+SQL: SHOW COLUMNS FROM `dong_auth_group_access` [ RunTime:0.0152s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM dong_auth_group_access a INNER JOIN dong_auth_group g on a.group_id=g.id  WHERE ( a.uid='1' and g.status='1' )  [ RunTime:0.0018s ]
+SQL: SHOW COLUMNS FROM `dong_auth_rule` [ RunTime:0.0125s ]
+SQL: SELECT `condition`,`name` FROM `dong_auth_rule` WHERE `id` IN ('1','2','3','4','5','6','7','8','9','10','11','12','13','14','15','19','20','21','23') AND `type` = 1 AND `status` = 1  [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `dong_auth_rule` [ RunTime:0.0178s ]
+SQL: SELECT * FROM `dong_auth_rule` WHERE ( menu=0 ) ORDER BY id DESC  [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `dong_admin` [ RunTime:0.0137s ]
+SQL: SELECT * FROM `dong_admin` WHERE ( id=1 )  [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000112s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000226s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.038403s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.038612s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001776s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002003s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001520s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001700s ]
+
+[ 2016-09-21T13:01:07+08:00 ] 127.0.0.1 /index.php/Admin/User/update.html?id=2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000041s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000609s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000985s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001125s ]
+SQL: SHOW COLUMNS FROM `dong_auth_group_access` [ RunTime:0.0135s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM dong_auth_group_access a INNER JOIN dong_auth_group g on a.group_id=g.id  WHERE ( a.uid='1' and g.status='1' )  [ RunTime:0.0017s ]
+SQL: SHOW COLUMNS FROM `dong_auth_rule` [ RunTime:0.0173s ]
+SQL: SELECT `condition`,`name` FROM `dong_auth_rule` WHERE `id` IN ('1','2','3','4','5','6','7','8','9','10','11','12','13','14','15','19','20','21','23') AND `type` = 1 AND `status` = 1  [ RunTime:0.0014s ]
+SQL: SHOW COLUMNS FROM `dong_auth_rule` [ RunTime:0.0203s ]
+SQL: SELECT * FROM `dong_auth_rule` WHERE ( menu=0 ) ORDER BY id DESC  [ RunTime:0.0102s ]
+SQL: SHOW COLUMNS FROM `dong_admin` [ RunTime:0.0173s ]
+SQL: SELECT * FROM `dong_admin` WHERE ( id=2 )  [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000112s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000235s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012004s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012229s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000553s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000651s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000787s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000919s ]
+
+[ 2016-09-21T13:01:11+08:00 ] 127.0.0.1 /index.php/Admin/News/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000415s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000834s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000957s ]
+SQL: SHOW COLUMNS FROM `dong_auth_group_access` [ RunTime:0.0148s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM dong_auth_group_access a INNER JOIN dong_auth_group g on a.group_id=g.id  WHERE ( a.uid='1' and g.status='1' )  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `dong_auth_rule` [ RunTime:0.0153s ]
+SQL: SELECT `condition`,`name` FROM `dong_auth_rule` WHERE `id` IN ('1','2','3','4','5','6','7','8','9','10','11','12','13','14','15','19','20','21','23') AND `type` = 1 AND `status` = 1  [ RunTime:0.0024s ]
+SQL: SHOW COLUMNS FROM `dong_auth_rule` [ RunTime:0.0148s ]
+SQL: SELECT * FROM `dong_auth_rule` WHERE ( menu=0 ) ORDER BY id DESC  [ RunTime:0.0005s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000728s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000832s ]
+
+[ 2016-09-21T13:01:25+08:00 ] 127.0.0.1 /index.php/Admin/AdminAction/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000425s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000888s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001049s ]
+SQL: SHOW COLUMNS FROM `dong_auth_group_access` [ RunTime:0.0147s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM dong_auth_group_access a INNER JOIN dong_auth_group g on a.group_id=g.id  WHERE ( a.uid='1' and g.status='1' )  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `dong_auth_rule` [ RunTime:0.0156s ]
+SQL: SELECT `condition`,`name` FROM `dong_auth_rule` WHERE `id` IN ('1','2','3','4','5','6','7','8','9','10','11','12','13','14','15','19','20','21','23') AND `type` = 1 AND `status` = 1  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `dong_auth_rule` [ RunTime:0.0169s ]
+SQL: SELECT * FROM `dong_auth_rule` WHERE ( menu=0 ) ORDER BY id DESC  [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000198s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000303s ]
+NOTIC: [8] Undefined variable: results E:\wamp\www\Blog\Blog\Runtime\Cache\Admin\f031134e54174b49ba8099e6189c15d6.php 第 123 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.026932s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.027054s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000558s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000654s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000684s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000775s ]
+
+[ 2016-09-21T13:01:27+08:00 ] 127.0.0.1 /index.php/Admin/AdminAction/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000458s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000596s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000712s ]
+SQL: SHOW COLUMNS FROM `dong_auth_group_access` [ RunTime:0.0148s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM dong_auth_group_access a INNER JOIN dong_auth_group g on a.group_id=g.id  WHERE ( a.uid='1' and g.status='1' )  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `dong_auth_rule` [ RunTime:0.0129s ]
+SQL: SELECT `condition`,`name` FROM `dong_auth_rule` WHERE `id` IN ('1','2','3','4','5','6','7','8','9','10','11','12','13','14','15','19','20','21','23') AND `type` = 1 AND `status` = 1  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `dong_auth_rule` [ RunTime:0.0146s ]
+SQL: SELECT * FROM `dong_auth_rule` WHERE ( menu=0 ) ORDER BY id DESC  [ RunTime:0.0006s ]
+SQL: SELECT * FROM `dong_auth_rule` WHERE ( pid=0 )  [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000197s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000299s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.029429s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.029580s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000493s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000578s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000789s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000910s ]
+
+[ 2016-09-21T13:02:20+08:00 ] 127.0.0.1 /index.php/Admin/AdminAction/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000493s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000728s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000868s ]
+SQL: SHOW COLUMNS FROM `dong_auth_group_access` [ RunTime:0.0150s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM dong_auth_group_access a INNER JOIN dong_auth_group g on a.group_id=g.id  WHERE ( a.uid='1' and g.status='1' )  [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `dong_auth_rule` [ RunTime:0.0125s ]
+SQL: SELECT `condition`,`name` FROM `dong_auth_rule` WHERE `id` IN ('1','2','3','4','5','6','7','8','9','10','11','12','13','14','15','19','20','21','23') AND `type` = 1 AND `status` = 1  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `dong_auth_rule` [ RunTime:0.0134s ]
+SQL: SELECT * FROM `dong_auth_rule` WHERE ( menu=0 ) ORDER BY id DESC  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `dong_auth_rule` WHERE ( pid=0 )  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000219s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000401s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019199s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019328s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000429s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000512s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000708s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000807s ]
+
+[ 2016-09-21T13:02:22+08:00 ] 127.0.0.1 /index.php/Admin/News/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000035s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000566s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000830s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000979s ]
+SQL: SHOW COLUMNS FROM `dong_auth_group_access` [ RunTime:0.0195s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM dong_auth_group_access a INNER JOIN dong_auth_group g on a.group_id=g.id  WHERE ( a.uid='1' and g.status='1' )  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `dong_auth_rule` [ RunTime:0.0148s ]
+SQL: SELECT `condition`,`name` FROM `dong_auth_rule` WHERE `id` IN ('1','2','3','4','5','6','7','8','9','10','11','12','13','14','15','19','20','21','23') AND `type` = 1 AND `status` = 1  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `dong_auth_rule` [ RunTime:0.0153s ]
+SQL: SELECT * FROM `dong_auth_rule` WHERE ( menu=0 ) ORDER BY id DESC  [ RunTime:0.0005s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000670s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000779s ]
+
+[ 2016-09-21T13:02:47+08:00 ] 127.0.0.1 /index.php/Admin/AdminAction/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000081s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000760s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000593s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000705s ]
+SQL: SHOW COLUMNS FROM `dong_auth_group_access` [ RunTime:0.0155s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM dong_auth_group_access a INNER JOIN dong_auth_group g on a.group_id=g.id  WHERE ( a.uid='1' and g.status='1' )  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `dong_auth_rule` [ RunTime:0.0096s ]
+SQL: SELECT `condition`,`name` FROM `dong_auth_rule` WHERE `id` IN ('1','2','3','4','5','6','7','8','9','10','11','12','13','14','15','19','20','21','23') AND `type` = 1 AND `status` = 1  [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `dong_auth_rule` [ RunTime:0.0126s ]
+SQL: SELECT * FROM `dong_auth_rule` WHERE ( menu=0 ) ORDER BY id DESC  [ RunTime:0.0007s ]
+SQL: SELECT * FROM `dong_auth_rule` WHERE ( pid=0 )  [ RunTime:0.0025s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000223s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000351s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.022403s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022590s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000635s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000752s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000823s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000950s ]
+
+[ 2016-09-21T13:02:48+08:00 ] 127.0.0.1 /index.php/Admin/News/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000886s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001240s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001434s ]
+SQL: SHOW COLUMNS FROM `dong_auth_group_access` [ RunTime:0.0112s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM dong_auth_group_access a INNER JOIN dong_auth_group g on a.group_id=g.id  WHERE ( a.uid='1' and g.status='1' )  [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `dong_auth_rule` [ RunTime:0.0132s ]
+SQL: SELECT `condition`,`name` FROM `dong_auth_rule` WHERE `id` IN ('1','2','3','4','5','6','7','8','9','10','11','12','13','14','15','19','20','21','23') AND `type` = 1 AND `status` = 1  [ RunTime:0.0011s ]
+SQL: SHOW COLUMNS FROM `dong_auth_rule` [ RunTime:0.0047s ]
+SQL: SELECT * FROM `dong_auth_rule` WHERE ( menu=0 ) ORDER BY id DESC  [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000209s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000324s ]
+NOTIC: [8] Undefined variable: info E:\wamp\www\Blog\Blog\Runtime\Cache\Admin\645d1c20c1533048a30bc28e05b6c151.php 第 112 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.023008s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023137s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000484s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000575s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000759s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000857s ]
+
+[ 2016-09-21T13:02:51+08:00 ] 127.0.0.1 /index.php/Admin/AdminAction/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000491s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000564s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000674s ]
+SQL: SHOW COLUMNS FROM `dong_auth_group_access` [ RunTime:0.0126s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM dong_auth_group_access a INNER JOIN dong_auth_group g on a.group_id=g.id  WHERE ( a.uid='1' and g.status='1' )  [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `dong_auth_rule` [ RunTime:0.0129s ]
+SQL: SELECT `condition`,`name` FROM `dong_auth_rule` WHERE `id` IN ('1','2','3','4','5','6','7','8','9','10','11','12','13','14','15','19','20','21','23') AND `type` = 1 AND `status` = 1  [ RunTime:0.0013s ]
+SQL: SHOW COLUMNS FROM `dong_auth_rule` [ RunTime:0.0116s ]
+SQL: SELECT * FROM `dong_auth_rule` WHERE ( menu=0 ) ORDER BY id DESC  [ RunTime:0.0009s ]
+SQL: SELECT * FROM `dong_auth_rule` WHERE ( pid=0 )  [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000198s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000306s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017667s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017792s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000475s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000558s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000669s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000757s ]
+
+[ 2016-09-21T13:02:53+08:00 ] 127.0.0.1 /index.php/Admin/News/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000045s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000981s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000592s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000709s ]
+SQL: SHOW COLUMNS FROM `dong_auth_group_access` [ RunTime:0.0117s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM dong_auth_group_access a INNER JOIN dong_auth_group g on a.group_id=g.id  WHERE ( a.uid='1' and g.status='1' )  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `dong_auth_rule` [ RunTime:0.0096s ]
+SQL: SELECT `condition`,`name` FROM `dong_auth_rule` WHERE `id` IN ('1','2','3','4','5','6','7','8','9','10','11','12','13','14','15','19','20','21','23') AND `type` = 1 AND `status` = 1  [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `dong_auth_rule` [ RunTime:0.0117s ]
+SQL: SELECT * FROM `dong_auth_rule` WHERE ( menu=0 ) ORDER BY id DESC  [ RunTime:0.0009s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000230s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000349s ]
+NOTIC: [8] Undefined variable: info E:\wamp\www\Blog\Blog\Runtime\Cache\Admin\645d1c20c1533048a30bc28e05b6c151.php 第 112 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018451s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018558s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000525s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000628s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001111s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001254s ]
+
+[ 2016-09-21T13:03:51+08:00 ] 127.0.0.1 /index.php/Admin/News/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000643s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000630s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000735s ]
+SQL: SHOW COLUMNS FROM `dong_auth_group_access` [ RunTime:0.0123s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM dong_auth_group_access a INNER JOIN dong_auth_group g on a.group_id=g.id  WHERE ( a.uid='1' and g.status='1' )  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `dong_auth_rule` [ RunTime:0.0150s ]
+SQL: SELECT `condition`,`name` FROM `dong_auth_rule` WHERE `id` IN ('1','2','3','4','5','6','7','8','9','10','11','12','13','14','15','19','20','21','23') AND `type` = 1 AND `status` = 1  [ RunTime:0.0014s ]
+SQL: SHOW COLUMNS FROM `dong_auth_rule` [ RunTime:0.0141s ]
+SQL: SELECT * FROM `dong_auth_rule` WHERE ( menu=0 ) ORDER BY id DESC  [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000207s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000323s ]
+NOTIC: [8] Undefined variable: info E:\wamp\www\Blog\Blog\Runtime\Cache\Admin\645d1c20c1533048a30bc28e05b6c151.php 第 112 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017890s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018005s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000437s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000522s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000692s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000778s ]
+
+[ 2016-09-21T13:04:24+08:00 ] 127.0.0.1 /index.php/Admin/News/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000503s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000887s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001101s ]
+SQL: SHOW COLUMNS FROM `dong_auth_group_access` [ RunTime:0.0099s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM dong_auth_group_access a INNER JOIN dong_auth_group g on a.group_id=g.id  WHERE ( a.uid='1' and g.status='1' )  [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `dong_auth_rule` [ RunTime:0.0222s ]
+SQL: SELECT `condition`,`name` FROM `dong_auth_rule` WHERE `id` IN ('1','2','3','4','5','6','7','8','9','10','11','12','13','14','15','19','20','21','23') AND `type` = 1 AND `status` = 1  [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `dong_auth_rule` [ RunTime:0.0171s ]
+SQL: SELECT * FROM `dong_auth_rule` WHERE ( menu=0 ) ORDER BY id DESC  [ RunTime:0.0007s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000211s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000325s ]
+NOTIC: [8] Undefined variable: info E:\wamp\www\Blog\Blog\Runtime\Cache\Admin\645d1c20c1533048a30bc28e05b6c151.php 第 112 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017654s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017760s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000467s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000556s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000679s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000766s ]
+
+[ 2016-09-21T15:03:34+08:00 ] 127.0.0.1 /index.php/Admin/News/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.017083s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001419s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001567s ]
+SQL: SHOW COLUMNS FROM `dong_auth_group_access` [ RunTime:0.3701s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM dong_auth_group_access a INNER JOIN dong_auth_group g on a.group_id=g.id  WHERE ( a.uid='1' and g.status='1' )  [ RunTime:1.1471s ]
+SQL: SHOW COLUMNS FROM `dong_auth_rule` [ RunTime:0.1316s ]
+SQL: SELECT `condition`,`name` FROM `dong_auth_rule` WHERE `id` IN ('1','2','3','4','5','6','7','8','9','10','11','12','13','14','15','19','20','21','23') AND `type` = 1 AND `status` = 1  [ RunTime:0.0847s ]
+SQL: SHOW COLUMNS FROM `dong_auth_rule` [ RunTime:0.0103s ]
+SQL: SELECT * FROM `dong_auth_rule` WHERE ( menu=0 ) ORDER BY id DESC  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.018459s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.018591s ]
+NOTIC: [8] Undefined variable: info E:\wamp\www\Blog\Blog\Runtime\Cache\Admin\645d1c20c1533048a30bc28e05b6c151.php 第 112 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.117017s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.117131s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.011285s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.011495s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001729s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001849s ]
+
+[ 2016-09-21T15:03:53+08:00 ] 127.0.0.1 /index.php/Admin/News/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000778s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000757s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000862s ]
+SQL: SHOW COLUMNS FROM `dong_auth_group_access` [ RunTime:0.0090s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM dong_auth_group_access a INNER JOIN dong_auth_group g on a.group_id=g.id  WHERE ( a.uid='1' and g.status='1' )  [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `dong_auth_rule` [ RunTime:0.0105s ]
+SQL: SELECT `condition`,`name` FROM `dong_auth_rule` WHERE `id` IN ('1','2','3','4','5','6','7','8','9','10','11','12','13','14','15','19','20','21','23') AND `type` = 1 AND `status` = 1  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `dong_auth_rule` [ RunTime:0.0094s ]
+SQL: SELECT * FROM `dong_auth_rule` WHERE ( menu=0 ) ORDER BY id DESC  [ RunTime:0.0007s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000201s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000307s ]
+NOTIC: [8] Undefined variable: info E:\wamp\www\Blog\Blog\Runtime\Cache\Admin\645d1c20c1533048a30bc28e05b6c151.php 第 112 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019415s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019539s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000454s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000536s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000684s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000772s ]
+
+[ 2016-09-21T15:05:12+08:00 ] 127.0.0.1 /index.php/Admin/News/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000582s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000915s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001042s ]
+SQL: SHOW COLUMNS FROM `dong_auth_group_access` [ RunTime:0.0053s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM dong_auth_group_access a INNER JOIN dong_auth_group g on a.group_id=g.id  WHERE ( a.uid='1' and g.status='1' )  [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `dong_auth_rule` [ RunTime:0.0092s ]
+SQL: SELECT `condition`,`name` FROM `dong_auth_rule` WHERE `id` IN ('1','2','3','4','5','6','7','8','9','10','11','12','13','14','15','19','20','21','23') AND `type` = 1 AND `status` = 1  [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `dong_auth_rule` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `dong_auth_rule` WHERE ( menu=0 ) ORDER BY id DESC  [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000209s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000320s ]
+NOTIC: [8] Undefined variable: info E:\wamp\www\Blog\Blog\Runtime\Cache\Admin\645d1c20c1533048a30bc28e05b6c151.php 第 112 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.022899s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023093s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000508s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000605s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000749s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000848s ]
+
+[ 2016-09-21T15:07:07+08:00 ] 127.0.0.1 /index.php/Admin/News/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000487s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000781s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000937s ]
+SQL: SHOW COLUMNS FROM `dong_auth_group_access` [ RunTime:0.0044s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM dong_auth_group_access a INNER JOIN dong_auth_group g on a.group_id=g.id  WHERE ( a.uid='1' and g.status='1' )  [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `dong_auth_rule` [ RunTime:0.0047s ]
+SQL: SELECT `condition`,`name` FROM `dong_auth_rule` WHERE `id` IN ('1','2','3','4','5','6','7','8','9','10','11','12','13','14','15','19','20','21','23') AND `type` = 1 AND `status` = 1  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `dong_auth_rule` [ RunTime:0.0061s ]
+SQL: SELECT * FROM `dong_auth_rule` WHERE ( menu=0 ) ORDER BY id DESC  [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000531s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000668s ]
+NOTIC: [8] Undefined variable: info E:\wamp\www\Blog\Blog\Runtime\Cache\Admin\645d1c20c1533048a30bc28e05b6c151.php 第 112 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018109s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018229s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000599s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000698s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000810s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000916s ]
+
+[ 2016-09-21T16:00:20+08:00 ] 127.0.0.1 /index.php/Admin/News/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000035s ]
+INFO: [ app_init ] --END-- [ RunTime:0.095852s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.040291s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.048687s ]
+SQL: SHOW COLUMNS FROM `dong_auth_group_access` [ RunTime:0.8239s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM dong_auth_group_access a INNER JOIN dong_auth_group g on a.group_id=g.id  WHERE ( a.uid='1' and g.status='1' )  [ RunTime:0.1414s ]
+SQL: SHOW COLUMNS FROM `dong_auth_rule` [ RunTime:0.1364s ]
+SQL: SELECT `condition`,`name` FROM `dong_auth_rule` WHERE `id` IN ('1','2','3','4','5','6','7','8','9','10','11','12','13','14','15','19','20','21','23') AND `type` = 1 AND `status` = 1  [ RunTime:0.0551s ]
+SQL: SHOW COLUMNS FROM `dong_auth_rule` [ RunTime:0.1150s ]
+SQL: SELECT * FROM `dong_auth_rule` WHERE ( menu=0 ) ORDER BY id DESC  [ RunTime:0.1131s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000305s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000495s ]
+NOTIC: [8] Undefined variable: info E:\wamp\www\Blog\Blog\Runtime\Cache\Admin\645d1c20c1533048a30bc28e05b6c151.php 第 112 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.565822s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.566003s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.024011s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.024417s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.048974s ]
+INFO: [ app_end ] --END-- [ RunTime:0.049117s ]
+
+[ 2016-09-21T16:01:34+08:00 ] 127.0.0.1 /index.php/Admin/News/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000489s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000833s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000964s ]
+SQL: SHOW COLUMNS FROM `dong_auth_group_access` [ RunTime:0.1182s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM dong_auth_group_access a INNER JOIN dong_auth_group g on a.group_id=g.id  WHERE ( a.uid='1' and g.status='1' )  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `dong_auth_rule` [ RunTime:0.1578s ]
+SQL: SELECT `condition`,`name` FROM `dong_auth_rule` WHERE `id` IN ('1','2','3','4','5','6','7','8','9','10','11','12','13','14','15','19','20','21','23') AND `type` = 1 AND `status` = 1  [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `dong_auth_rule` [ RunTime:0.0215s ]
+SQL: SELECT * FROM `dong_auth_rule` WHERE ( menu=0 ) ORDER BY id DESC  [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000208s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000316s ]
+NOTIC: [8] Undefined variable: info E:\wamp\www\Blog\Blog\Runtime\Cache\Admin\645d1c20c1533048a30bc28e05b6c151.php 第 112 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.021984s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022093s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000508s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000599s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000691s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000778s ]
+
+[ 2016-09-21T16:03:15+08:00 ] 127.0.0.1 /index.php/Admin/News/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000559s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001305s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001521s ]
+SQL: SHOW COLUMNS FROM `dong_auth_group_access` [ RunTime:0.0121s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM dong_auth_group_access a INNER JOIN dong_auth_group g on a.group_id=g.id  WHERE ( a.uid='1' and g.status='1' )  [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `dong_auth_rule` [ RunTime:0.0203s ]
+SQL: SELECT `condition`,`name` FROM `dong_auth_rule` WHERE `id` IN ('1','2','3','4','5','6','7','8','9','10','11','12','13','14','15','19','20','21','23') AND `type` = 1 AND `status` = 1  [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `dong_auth_rule` [ RunTime:0.0251s ]
+SQL: SELECT * FROM `dong_auth_rule` WHERE ( menu=0 ) ORDER BY id DESC  [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000221s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000393s ]
+NOTIC: [8] Undefined variable: info E:\wamp\www\Blog\Blog\Runtime\Cache\Admin\645d1c20c1533048a30bc28e05b6c151.php 第 112 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019076s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019195s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000773s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000897s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000815s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000917s ]
+
+[ 2016-09-21T16:03:44+08:00 ] 127.0.0.1 /index.php/Admin/News/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000529s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000856s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000980s ]
+SQL: SHOW COLUMNS FROM `dong_auth_group_access` [ RunTime:0.0208s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM dong_auth_group_access a INNER JOIN dong_auth_group g on a.group_id=g.id  WHERE ( a.uid='1' and g.status='1' )  [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `dong_auth_rule` [ RunTime:0.0193s ]
+SQL: SELECT `condition`,`name` FROM `dong_auth_rule` WHERE `id` IN ('1','2','3','4','5','6','7','8','9','10','11','12','13','14','15','19','20','21','23') AND `type` = 1 AND `status` = 1  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `dong_auth_rule` [ RunTime:0.0206s ]
+SQL: SELECT * FROM `dong_auth_rule` WHERE ( menu=0 ) ORDER BY id DESC  [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000206s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000314s ]
+NOTIC: [8] Undefined variable: info E:\wamp\www\Blog\Blog\Runtime\Cache\Admin\645d1c20c1533048a30bc28e05b6c151.php 第 112 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.021182s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021285s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000539s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000632s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000810s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000911s ]
+
+[ 2016-09-21T16:08:02+08:00 ] 127.0.0.1 /index.php/Admin/News/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001163s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000762s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000877s ]
+SQL: SHOW COLUMNS FROM `dong_auth_group_access` [ RunTime:0.0147s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM dong_auth_group_access a INNER JOIN dong_auth_group g on a.group_id=g.id  WHERE ( a.uid='1' and g.status='1' )  [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `dong_auth_rule` [ RunTime:0.0288s ]
+SQL: SELECT `condition`,`name` FROM `dong_auth_rule` WHERE `id` IN ('1','2','3','4','5','6','7','8','9','10','11','12','13','14','15','19','20','21','23') AND `type` = 1 AND `status` = 1  [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `dong_auth_rule` [ RunTime:0.0179s ]
+SQL: SELECT * FROM `dong_auth_rule` WHERE ( menu=0 ) ORDER BY id DESC  [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000212s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000318s ]
+NOTIC: [8] Undefined variable: info E:\wamp\www\Blog\Blog\Runtime\Cache\Admin\645d1c20c1533048a30bc28e05b6c151.php 第 112 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.023410s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023515s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000668s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000767s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000914s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001069s ]
+
+[ 2016-09-21T16:14:12+08:00 ] 127.0.0.1 /index.php/Admin/News/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000787s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.007952s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.008081s ]
+SQL: SHOW COLUMNS FROM `dong_auth_group_access` [ RunTime:0.0155s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM dong_auth_group_access a INNER JOIN dong_auth_group g on a.group_id=g.id  WHERE ( a.uid='1' and g.status='1' )  [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `dong_auth_rule` [ RunTime:0.0163s ]
+SQL: SELECT `condition`,`name` FROM `dong_auth_rule` WHERE `id` IN ('1','2','3','4','5','6','7','8','9','10','11','12','13','14','15','19','20','21','23') AND `type` = 1 AND `status` = 1  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `dong_auth_rule` [ RunTime:0.0090s ]
+SQL: SELECT * FROM `dong_auth_rule` WHERE ( menu=0 ) ORDER BY id DESC  [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000243s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000353s ]
+NOTIC: [8] Undefined variable: info E:\wamp\www\Blog\Blog\Runtime\Cache\Admin\645d1c20c1533048a30bc28e05b6c151.php 第 112 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.116164s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.116432s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.003850s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003981s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.013553s ]
+INFO: [ app_end ] --END-- [ RunTime:0.013661s ]
+
+[ 2016-09-21T16:15:30+08:00 ] 127.0.0.1 /index.php/Admin/News/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000519s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001861s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002051s ]
+SQL: SHOW COLUMNS FROM `dong_auth_group_access` [ RunTime:0.0129s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM dong_auth_group_access a INNER JOIN dong_auth_group g on a.group_id=g.id  WHERE ( a.uid='1' and g.status='1' )  [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `dong_auth_rule` [ RunTime:0.0032s ]
+SQL: SELECT `condition`,`name` FROM `dong_auth_rule` WHERE `id` IN ('1','2','3','4','5','6','7','8','9','10','11','12','13','14','15','19','20','21','23') AND `type` = 1 AND `status` = 1  [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `dong_auth_rule` [ RunTime:0.0074s ]
+SQL: SELECT * FROM `dong_auth_rule` WHERE ( menu=0 ) ORDER BY id DESC  [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000279s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000460s ]
+NOTIC: [8] Undefined variable: info E:\wamp\www\Blog\Blog\Runtime\Cache\Admin\645d1c20c1533048a30bc28e05b6c151.php 第 112 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.089733s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.089841s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000532s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000616s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000690s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000775s ]
+
+[ 2016-09-21T16:16:16+08:00 ] 127.0.0.1 /index.php/Admin/News/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000612s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001153s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001308s ]
+SQL: SHOW COLUMNS FROM `dong_auth_group_access` [ RunTime:0.0185s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM dong_auth_group_access a INNER JOIN dong_auth_group g on a.group_id=g.id  WHERE ( a.uid='1' and g.status='1' )  [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `dong_auth_rule` [ RunTime:0.0122s ]
+SQL: SELECT `condition`,`name` FROM `dong_auth_rule` WHERE `id` IN ('1','2','3','4','5','6','7','8','9','10','11','12','13','14','15','19','20','21','23') AND `type` = 1 AND `status` = 1  [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `dong_auth_rule` [ RunTime:0.0136s ]
+SQL: SELECT * FROM `dong_auth_rule` WHERE ( menu=0 ) ORDER BY id DESC  [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000264s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000419s ]
+NOTIC: [8] Undefined variable: info E:\wamp\www\Blog\Blog\Runtime\Cache\Admin\645d1c20c1533048a30bc28e05b6c151.php 第 112 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020400s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020522s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000570s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000662s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000749s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000842s ]
+
+[ 2016-09-21T16:19:15+08:00 ] 127.0.0.1 /index.php/Admin/News/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000123s ]
+INFO: [ app_init ] --END-- [ RunTime:0.981177s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.100031s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.100161s ]
+SQL: SHOW COLUMNS FROM `dong_auth_group_access` [ RunTime:0.0163s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM dong_auth_group_access a INNER JOIN dong_auth_group g on a.group_id=g.id  WHERE ( a.uid='1' and g.status='1' )  [ RunTime:0.0052s ]
+SQL: SHOW COLUMNS FROM `dong_auth_rule` [ RunTime:0.0118s ]
+SQL: SELECT `condition`,`name` FROM `dong_auth_rule` WHERE `id` IN ('1','2','3','4','5','6','7','8','9','10','11','12','13','14','15','19','20','21','23') AND `type` = 1 AND `status` = 1  [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `dong_auth_rule` [ RunTime:0.0234s ]
+SQL: SELECT * FROM `dong_auth_rule` WHERE ( menu=0 ) ORDER BY id DESC  [ RunTime:0.0014s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000285s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000452s ]
+NOTIC: [8] Undefined variable: info E:\wamp\www\Blog\Blog\Runtime\Cache\Admin\645d1c20c1533048a30bc28e05b6c151.php 第 112 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:1.706363s ]
+INFO: [ view_parse ] --END-- [ RunTime:1.706474s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.113401s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.113545s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.019853s ]
+INFO: [ app_end ] --END-- [ RunTime:0.019964s ]
+
+[ 2016-09-21T16:19:41+08:00 ] 127.0.0.1 /index.php/Admin/News/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000670s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000763s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000875s ]
+SQL: SHOW COLUMNS FROM `dong_auth_group_access` [ RunTime:0.0273s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM dong_auth_group_access a INNER JOIN dong_auth_group g on a.group_id=g.id  WHERE ( a.uid='1' and g.status='1' )  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `dong_auth_rule` [ RunTime:0.0057s ]
+SQL: SELECT `condition`,`name` FROM `dong_auth_rule` WHERE `id` IN ('1','2','3','4','5','6','7','8','9','10','11','12','13','14','15','19','20','21','23') AND `type` = 1 AND `status` = 1  [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `dong_auth_rule` [ RunTime:0.0120s ]
+SQL: SELECT * FROM `dong_auth_rule` WHERE ( menu=0 ) ORDER BY id DESC  [ RunTime:0.0017s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000258s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000410s ]
+NOTIC: [8] Undefined variable: info E:\wamp\www\Blog\Blog\Runtime\Cache\Admin\645d1c20c1533048a30bc28e05b6c151.php 第 112 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.028788s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.028908s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000625s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000729s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001410s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001602s ]
+
+[ 2016-09-21T16:21:35+08:00 ] 127.0.0.1 /index.php/Admin/News/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000480s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000751s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000860s ]
+SQL: SHOW COLUMNS FROM `dong_auth_group_access` [ RunTime:0.0128s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM dong_auth_group_access a INNER JOIN dong_auth_group g on a.group_id=g.id  WHERE ( a.uid='1' and g.status='1' )  [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `dong_auth_rule` [ RunTime:0.0029s ]
+SQL: SELECT `condition`,`name` FROM `dong_auth_rule` WHERE `id` IN ('1','2','3','4','5','6','7','8','9','10','11','12','13','14','15','19','20','21','23') AND `type` = 1 AND `status` = 1  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `dong_auth_rule` [ RunTime:0.0038s ]
+SQL: SELECT * FROM `dong_auth_rule` WHERE ( menu=0 ) ORDER BY id DESC  [ RunTime:0.0007s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000377s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000576s ]
+NOTIC: [8] Undefined variable: info E:\wamp\www\Blog\Blog\Runtime\Cache\Admin\645d1c20c1533048a30bc28e05b6c151.php 第 112 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.023147s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023278s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000548s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000646s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000812s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000918s ]
+
+[ 2016-09-21T16:22:12+08:00 ] 127.0.0.1 /index.php/Admin/News/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000046s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000713s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000762s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000897s ]
+SQL: SHOW COLUMNS FROM `dong_auth_group_access` [ RunTime:0.0105s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM dong_auth_group_access a INNER JOIN dong_auth_group g on a.group_id=g.id  WHERE ( a.uid='1' and g.status='1' )  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `dong_auth_rule` [ RunTime:0.0112s ]
+SQL: SELECT `condition`,`name` FROM `dong_auth_rule` WHERE `id` IN ('1','2','3','4','5','6','7','8','9','10','11','12','13','14','15','19','20','21','23') AND `type` = 1 AND `status` = 1  [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `dong_auth_rule` [ RunTime:0.0129s ]
+SQL: SELECT * FROM `dong_auth_rule` WHERE ( menu=0 ) ORDER BY id DESC  [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000432s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000631s ]
+NOTIC: [8] Undefined variable: info E:\wamp\www\Blog\Blog\Runtime\Cache\Admin\645d1c20c1533048a30bc28e05b6c151.php 第 112 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.032213s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.032339s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000467s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000554s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000699s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000786s ]
+
+[ 2016-09-21T16:22:24+08:00 ] 127.0.0.1 /index.php/Admin/News/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000630s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000627s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000745s ]
+SQL: SHOW COLUMNS FROM `dong_auth_group_access` [ RunTime:0.0121s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM dong_auth_group_access a INNER JOIN dong_auth_group g on a.group_id=g.id  WHERE ( a.uid='1' and g.status='1' )  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `dong_auth_rule` [ RunTime:0.0101s ]
+SQL: SELECT `condition`,`name` FROM `dong_auth_rule` WHERE `id` IN ('1','2','3','4','5','6','7','8','9','10','11','12','13','14','15','19','20','21','23') AND `type` = 1 AND `status` = 1  [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `dong_auth_rule` [ RunTime:0.0113s ]
+SQL: SELECT * FROM `dong_auth_rule` WHERE ( menu=0 ) ORDER BY id DESC  [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000401s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000664s ]
+NOTIC: [8] Undefined variable: info E:\wamp\www\Blog\Blog\Runtime\Cache\Admin\645d1c20c1533048a30bc28e05b6c151.php 第 112 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.021404s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021520s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000442s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000523s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000745s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000875s ]
+
+[ 2016-09-21T16:24:05+08:00 ] 127.0.0.1 /index.php/Admin/News/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000519s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003473s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003630s ]
+SQL: SHOW COLUMNS FROM `dong_auth_group_access` [ RunTime:0.0158s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM dong_auth_group_access a INNER JOIN dong_auth_group g on a.group_id=g.id  WHERE ( a.uid='1' and g.status='1' )  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `dong_auth_rule` [ RunTime:0.0082s ]
+SQL: SELECT `condition`,`name` FROM `dong_auth_rule` WHERE `id` IN ('1','2','3','4','5','6','7','8','9','10','11','12','13','14','15','19','20','21','23') AND `type` = 1 AND `status` = 1  [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `dong_auth_rule` [ RunTime:0.0155s ]
+SQL: SELECT * FROM `dong_auth_rule` WHERE ( menu=0 ) ORDER BY id DESC  [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000373s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000573s ]
+NOTIC: [8] Undefined variable: info E:\wamp\www\Blog\Blog\Runtime\Cache\Admin\645d1c20c1533048a30bc28e05b6c151.php 第 112 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.023122s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023238s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000506s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000587s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000729s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000819s ]
+
+[ 2016-09-21T16:24:12+08:00 ] 127.0.0.1 /index.php/Admin/News/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000033s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000534s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001247s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001617s ]
+SQL: SHOW COLUMNS FROM `dong_auth_group_access` [ RunTime:0.0244s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM dong_auth_group_access a INNER JOIN dong_auth_group g on a.group_id=g.id  WHERE ( a.uid='1' and g.status='1' )  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `dong_auth_rule` [ RunTime:0.0113s ]
+SQL: SELECT `condition`,`name` FROM `dong_auth_rule` WHERE `id` IN ('1','2','3','4','5','6','7','8','9','10','11','12','13','14','15','19','20','21','23') AND `type` = 1 AND `status` = 1  [ RunTime:0.0012s ]
+SQL: SHOW COLUMNS FROM `dong_auth_rule` [ RunTime:0.0041s ]
+SQL: SELECT * FROM `dong_auth_rule` WHERE ( menu=0 ) ORDER BY id DESC  [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000395s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000602s ]
+NOTIC: [8] Undefined variable: info E:\wamp\www\Blog\Blog\Runtime\Cache\Admin\645d1c20c1533048a30bc28e05b6c151.php 第 112 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020099s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020207s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000481s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000571s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000730s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000829s ]
+
+[ 2016-09-21T16:24:21+08:00 ] 127.0.0.1 /index.php/Admin/News/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000420s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000617s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000767s ]
+SQL: SHOW COLUMNS FROM `dong_auth_group_access` [ RunTime:0.0075s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM dong_auth_group_access a INNER JOIN dong_auth_group g on a.group_id=g.id  WHERE ( a.uid='1' and g.status='1' )  [ RunTime:0.0012s ]
+SQL: SHOW COLUMNS FROM `dong_auth_rule` [ RunTime:0.0149s ]
+SQL: SELECT `condition`,`name` FROM `dong_auth_rule` WHERE `id` IN ('1','2','3','4','5','6','7','8','9','10','11','12','13','14','15','19','20','21','23') AND `type` = 1 AND `status` = 1  [ RunTime:0.0014s ]
+SQL: SHOW COLUMNS FROM `dong_auth_rule` [ RunTime:0.0038s ]
+SQL: SELECT * FROM `dong_auth_rule` WHERE ( menu=0 ) ORDER BY id DESC  [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000377s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000574s ]
+NOTIC: [8] Undefined variable: info E:\wamp\www\Blog\Blog\Runtime\Cache\Admin\645d1c20c1533048a30bc28e05b6c151.php 第 112 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020153s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020278s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000864s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001086s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001071s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001328s ]
+
+[ 2016-09-21T16:24:31+08:00 ] 127.0.0.1 /index.php/Admin/News/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000562s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000817s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000935s ]
+SQL: SHOW COLUMNS FROM `dong_auth_group_access` [ RunTime:0.0122s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM dong_auth_group_access a INNER JOIN dong_auth_group g on a.group_id=g.id  WHERE ( a.uid='1' and g.status='1' )  [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `dong_auth_rule` [ RunTime:0.0118s ]
+SQL: SELECT `condition`,`name` FROM `dong_auth_rule` WHERE `id` IN ('1','2','3','4','5','6','7','8','9','10','11','12','13','14','15','19','20','21','23') AND `type` = 1 AND `status` = 1  [ RunTime:0.0012s ]
+SQL: SHOW COLUMNS FROM `dong_auth_rule` [ RunTime:0.0105s ]
+SQL: SELECT * FROM `dong_auth_rule` WHERE ( menu=0 ) ORDER BY id DESC  [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000371s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000566s ]
+NOTIC: [8] Undefined variable: info E:\wamp\www\Blog\Blog\Runtime\Cache\Admin\645d1c20c1533048a30bc28e05b6c151.php 第 112 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017354s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017462s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.003555s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003661s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000872s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000969s ]
+
+[ 2016-09-21T16:24:44+08:00 ] 127.0.0.1 /index.php/Admin/News/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000206s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000646s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000657s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000767s ]
+SQL: SHOW COLUMNS FROM `dong_auth_group_access` [ RunTime:0.0079s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM dong_auth_group_access a INNER JOIN dong_auth_group g on a.group_id=g.id  WHERE ( a.uid='1' and g.status='1' )  [ RunTime:0.0016s ]
+SQL: SHOW COLUMNS FROM `dong_auth_rule` [ RunTime:0.0044s ]
+SQL: SELECT `condition`,`name` FROM `dong_auth_rule` WHERE `id` IN ('1','2','3','4','5','6','7','8','9','10','11','12','13','14','15','19','20','21','23') AND `type` = 1 AND `status` = 1  [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `dong_auth_rule` [ RunTime:0.0154s ]
+SQL: SELECT * FROM `dong_auth_rule` WHERE ( menu=0 ) ORDER BY id DESC  [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000369s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000561s ]
+NOTIC: [8] Undefined variable: info E:\wamp\www\Blog\Blog\Runtime\Cache\Admin\645d1c20c1533048a30bc28e05b6c151.php 第 112 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.021172s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021287s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000838s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000959s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000857s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000954s ]
+
+[ 2016-09-21T16:26:13+08:00 ] 127.0.0.1 /index.php/Admin/News/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000599s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002346s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002508s ]
+SQL: SHOW COLUMNS FROM `dong_auth_group_access` [ RunTime:0.0107s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM dong_auth_group_access a INNER JOIN dong_auth_group g on a.group_id=g.id  WHERE ( a.uid='1' and g.status='1' )  [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `dong_auth_rule` [ RunTime:0.0121s ]
+SQL: SELECT `condition`,`name` FROM `dong_auth_rule` WHERE `id` IN ('1','2','3','4','5','6','7','8','9','10','11','12','13','14','15','19','20','21','23') AND `type` = 1 AND `status` = 1  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `dong_auth_rule` [ RunTime:0.0096s ]
+SQL: SELECT * FROM `dong_auth_rule` WHERE ( menu=0 ) ORDER BY id DESC  [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000375s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000572s ]
+NOTIC: [8] Undefined variable: info E:\wamp\www\Blog\Blog\Runtime\Cache\Admin\645d1c20c1533048a30bc28e05b6c151.php 第 117 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.022038s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022152s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000636s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000736s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000887s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000994s ]
+
+[ 2016-09-21T16:36:41+08:00 ] 127.0.0.1 /index.php/Admin/News/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000050s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000485s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000844s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001070s ]
+SQL: SHOW COLUMNS FROM `dong_auth_group_access` [ RunTime:0.0160s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM dong_auth_group_access a INNER JOIN dong_auth_group g on a.group_id=g.id  WHERE ( a.uid='1' and g.status='1' )  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `dong_auth_rule` [ RunTime:0.0084s ]
+SQL: SELECT `condition`,`name` FROM `dong_auth_rule` WHERE `id` IN ('1','2','3','4','5','6','7','8','9','10','11','12','13','14','15','19','20','21','23') AND `type` = 1 AND `status` = 1  [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `dong_auth_rule` [ RunTime:0.0218s ]
+SQL: SELECT * FROM `dong_auth_rule` WHERE ( menu=0 ) ORDER BY id DESC  [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `dong_newscreate` [ RunTime:0.0170s ]
+SQL: SELECT * FROM `dong_newscreate`  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000373s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000569s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.021557s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021699s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000440s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000524s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000681s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000768s ]
+
+[ 2016-09-21T16:37:27+08:00 ] 127.0.0.1 /index.php/Admin/News/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000043s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002533s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000912s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001071s ]
+SQL: SHOW COLUMNS FROM `dong_auth_group_access` [ RunTime:0.0179s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM dong_auth_group_access a INNER JOIN dong_auth_group g on a.group_id=g.id  WHERE ( a.uid='1' and g.status='1' )  [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `dong_auth_rule` [ RunTime:0.0141s ]
+SQL: SELECT `condition`,`name` FROM `dong_auth_rule` WHERE `id` IN ('1','2','3','4','5','6','7','8','9','10','11','12','13','14','15','19','20','21','23') AND `type` = 1 AND `status` = 1  [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `dong_auth_rule` [ RunTime:0.0065s ]
+SQL: SELECT * FROM `dong_auth_rule` WHERE ( menu=0 ) ORDER BY id DESC  [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `dong_newscreate` [ RunTime:0.0033s ]
+SQL: SELECT * FROM `dong_newscreate`  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000398s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000640s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.022150s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022295s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000465s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000563s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000984s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002865s ]
+
+[ 2016-09-21T16:43:11+08:00 ] 127.0.0.1 /index.php/Admin/News/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000048s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001152s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000944s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001064s ]
+SQL: SHOW COLUMNS FROM `dong_auth_group_access` [ RunTime:0.0081s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM dong_auth_group_access a INNER JOIN dong_auth_group g on a.group_id=g.id  WHERE ( a.uid='1' and g.status='1' )  [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `dong_auth_rule` [ RunTime:0.0160s ]
+SQL: SELECT `condition`,`name` FROM `dong_auth_rule` WHERE `id` IN ('1','2','3','4','5','6','7','8','9','10','11','12','13','14','15','19','20','21','23') AND `type` = 1 AND `status` = 1  [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `dong_auth_rule` [ RunTime:0.0407s ]
+SQL: SELECT * FROM `dong_auth_rule` WHERE ( menu=0 ) ORDER BY id DESC  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `dong_newscreate` [ RunTime:0.0173s ]
+SQL: SELECT * FROM `dong_newscreate`  [ RunTime:0.0011s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000523s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000976s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.219322s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.219452s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.023274s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.023477s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.017407s ]
+INFO: [ app_end ] --END-- [ RunTime:0.017619s ]
+
